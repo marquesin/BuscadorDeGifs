@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:ital,wght@1,300&display=swap");
+
+/* GENERAL */
+* {
+  margin: auto;
+}
+.AppDia {
+  font-family: "KoHo", sans-serif;
+  text-align: center;
+  height: 100vw;
+}
+
+.AppNoche {
+  background-color: #12171b;
+  font-family: "KoHo", sans-serif;
+  text-align: center;
+  color: white;
+  border: solid;
+  height: 100vw;
+  margin: 0;
+}
+
+/* ICONO Y BOTON SUPERIOR */
+.conteinerLogosDesktop {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+}
+
+.buttonEstilo {
+  position: absolute;
+  top: 7%;
+  right: 20%;
+  width: 148px;
+  height: 43px;
+  border: 1px solid #6809e1;
+  box-sizing: border-box;
+  border-radius: 61px;
+  color: rgba(104, 9, 225, 1);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+
+/* TITULO E ILUSTRACION*/
+.ConteinerIlustraYTitulo {
+  margin-top: 10%;
+}
+
+.inspirate {
+  color: rgba(87, 46, 229, 1);
+}
+
+.inspirateNoche {
+  color: white;
+}
+
+/* BUSQUEDA */
+.inputButon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 542px;
+  margin-left: 33%;
+}
+.inputBusqueda {
+  position: absolute;
+  width: 542px;
+  height: 52px;
+  border: 1px solid #121212;
+  box-sizing: border-box;
+  border-radius: 61px;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  z-index: 1;
+}
+
+.botonBusqueda {
+  position: relative;
+  width: 86px;
+  height: 52px;
+  background: #572ee5;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 0px 61px 61px 0px;
+  z-index: 2;
+  margin-left: 85%;
+}
+
+.iconCruz {
+  width: 20px;
+  color: white;
+}
+
+/* SUGERENCIAS DE BUSQUEDA */
+#sugerenciasIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5%;
+}
+.conteinerSugerencias {
+  position: absolute;
+  border: solid 1px;
+  border-top: none;
+  box-sizing: border-box;
+  border-radius: 61px;
+  width: 580px;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  margin-left: 32%;
+  padding-bottom: 2%;
+  background-color: whitesmoke;
+}
+.conteinerSugerenciasNoche {
+  position: absolute;
+  border: solid 1px;
+  border-top: none;
+  box-sizing: border-box;
+  border-radius: 61px;
+  width: 580px;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  margin-left: 32%;
+  padding-bottom: 2%;
+  margin-bottom: 5%;
+  background-color: rgb(74, 30, 227);
+}
+.conteinerSugerencia {
+  text-align: start;
+  margin-left: 8%;
+  color: black;
+}
+.conteinerSugerencia:hover {
+  cursor: pointer;
+  background-color: #572ee5;
+  padding: 0.5px;
+  margin-right: 20px;
+  margin-left: 8%;
+  color: whitesmoke;
+}
+
+/* RESULTADO DE BUSQUEDA */
+.conteinerCardsYResultado {
+  margin: 3% 14% 3% 14%;
+}
+
+.conteinerCards {
+  background-color: rgba(231, 231, 231, 1);
+  padding-top: 3%;
+}
+.conteinerCardsNoche {
+  padding-top: 3%;
+  background-color: #121212;
+}
+.gif {
+  width: 250px;
+  height: 250px;
+  margin: 40px;
+}
+.resultados {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #572ee5;
+}
+
+.fondoBlack {
+  background-color: #12171b;
+  height: 100vw;
+  width: 100%;
+  margin: 0;
+}
+
+/* MENSAJE SI NO ENCONTRÉ RESULTADOS */
+.conteResultadosvacios {
+  height: 15vw;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 0 5% 25%;
+  border: solid 4px gray;
+  background-color: #dadee2;
+}
+.resultadosvacios {
+  font-size: 2vw;
+  color: rgba(87, 46, 229, 1);
+}
+
+#loading {
+  margin-top: 5%;
+  width: 5vw;
+  height: 5vw;
+}
+
+/* MEDIAS QUERIES */
+@media screen and (min-width: 319px) and (max-width: 426px) {
+  * {
+    max-width: 100%;
+  }
+  .AppNoche {
+    height: 100vw;
+  }
+
+  .conteinerLogosDesktop svg {
+    width: 10vw;
+  }
+  .conteinerLogosDesktop {
+    top: 3%;
+    left: 7%;
+  }
+  .buttonEstilo {
+    width: 25vw;
+    height: 10vw;
+    font-size: 3vw;
+    top: 5%;
+    right: 3%;
+    align-self: auto;
+    margin: auto;
+  }
+  .ConteinerIlustraYTitulo {
+    max-width: 320px;
+    box-sizing: content-box;
+    margin-top: 20%;
+  }
+  .inspirate,
+  .inpirateNoche {
+    font-size: 5vw;
+  }
+  .ConteinerIlustraYTitulo svg {
+    width: 320px;
+  }
+  .inputButon {
+    margin: auto;
+    width: 325px;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+  }
+  .inputBusqueda {
+    width: 325px;
+  }
+  .conteinerSugerencias,
+  .conteinerSugerenciasNoche {
+    width: 100%;
+    margin: 0;
+    border-radius: 10%;
+  }
+  .resultados {
+    font-size: 5vw;
+  }
+  .conteinerCards {
+    width: 100%;
+    box-sizing: content-box;
+  }
+  .conteinerCardsNoche {
+    width: 100%;
+    box-sizing: content-box;
+  }
+  .gif {
+    width: 200px;
+    height: auto;
+    margin: 0.5px;
+  }
+  .conteResultadosvacios {
+    width: 70%;
+    height: 100px;
+    margin: 10% 0 5% 15%;
+    justify-items: center;
+  }
+  .conteResultadosvacios h3 {
+    font-size: 5vw;
+  }
+
+  #loading {
+    width: 20vw;
+    height: 20vw;
+    margin-top: 5%;
+  }
+  .fondoBlack {
+    height: 650vw;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 769px) {
+  .conteinerLogosDesktop {
+    left: 7%;
+  }
+  .buttonEstilo {
+    right: 5%;
+  }
+  .ConteinerIlustraYTitulo {
+    margin-top: 20%;
+  }
+  .inputButon {
+    margin-left: 15%;
+  }
+  .conteinerSugerencias,
+  .conteinerSugerenciasNoche {
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 10%;
+  }
+  .conteinerCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+  }
+  .gif {
+    padding: 0;
+    margin: 5px;
+  }
+  .fondoBlack {
+    height: 600vw;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+  .conteinerLogosDesktop {
+    left: 7%;
+  }
+  .buttonEstilo {
+    right: 5%;
+  }
+  .ConteinerIlustraYTitulo {
+    margin-top: 15%;
+  }
+  .inputButon {
+    margin-left: 25%;
+  }
+  .conteinerSugerencias,
+  .conteinerSugerenciasNoche {
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 15%;
+  }
+  .fondoBlack {
+    height: 210vw;
+  }
+}
